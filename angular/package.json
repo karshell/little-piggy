@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "copy-output": "ng build && rm -rf ./../cordova/www/* && cp ./dist/little-piggy/*.* ./../cordova/www/",
+    "android": "npm run copy-output && cd ../cordova && cordova emulate android && cd ../angular"
   },
   "private": true,
   "dependencies": {
