@@ -9,3 +9,4 @@ little-piggy-cordova/little-piggy-cordova/platforms/
 cordova/node_modules/
 cordova/platforms/browser/cordova/node_modules/cordova-common/src/util/xml-helpers.js
 cordova/platforms/
+cordova/www/
