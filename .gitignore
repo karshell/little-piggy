@@ -1,2 +1,8 @@
 little-piggy/platforms/
 little-piggy/node_modules/
+little-piggy-cordova/little-piggy-cordova/platforms/android/cordova/node_modules/lodash/internal/createCache.js
+little-piggy-cordova/little-piggy-cordova/platforms/android/cordova/node_modules/lodash/internal/createBaseFor.js
+little-piggy-cordova/little-piggy-cordova/node_modules/
+little-piggy-cordova/little-piggy-cordova/platforms/android/cordova/node_modules/lodash/internal/arrayReduce.js
+little-piggy-cordova/little-piggy-cordova/platforms/browser/cordova/node_modules/cordova-common/src/PluginManager.js
+little-piggy-cordova/little-piggy-cordova/platforms/
