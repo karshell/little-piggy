@@ -1,0 +1,50 @@
+.summary-element {
+    height: 100%;
+    border-top: 1px solid #888888;
+    border-left: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    min-height: 80px;
+    text-align: center;
+    padding: 3px;
+}
+
+.summary-element-last {
+    border-right: 1px solid #888888;  
+}
+
+.summary-container {
+}
+
+.numeric-positive {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 128, 0)
+}
+
+.numeric-neutral {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.numeric-negative {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(128, 0, 0)
+}
+
+.label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.icon-small {
+    height:25px;
+    width: 25px;
+}
+
+.subrow {
+    margin: 0;
+}
