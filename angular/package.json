@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "copy-output": "ng build && rm -rf ./../cordova/www/* && cp ./dist/little-piggy/*.* ./../cordova/www/",
-    "android": "npm run copy-output && cd ../cordova && cordova emulate android && cd ../angular"
+    "android": "npm run copy-output && cd ../cordova && cordova emulate android && cd ../angular",
+    "browser": "ng serve --watch --open"
   },
   "private": true,
   "dependencies": {
