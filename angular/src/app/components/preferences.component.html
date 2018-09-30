@@ -1,0 +1,39 @@
+<div class="container">
+    <form #preferencesForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="target">Savings Target</label>
+            <input type="number" class="form-control" id="target" name="target" [(ngModel)]="model.SavingsTarget" required #target="ngModel">
+        </div>
+
+        <div [hidden]="target.valid || target.pristine" class="alert alert-danger">
+            Target is required
+        </div>
+
+        <div class="form-group">
+            <label for="currency">Currency</label>
+            <select class="form-control" id="currency" name="currency" [(ngModel)]="model.Currency" required #currency="ngModel">
+                <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+            </select>
+        </div>
+        {{currency.class}}
+
+        <div [hidden]="currency.valid || currency.untouched" class="alert alert-danger">
+            Currency is required
+        </div>
+    
+        <div class="form-group">
+            <label for="targetDate">Target Date</label><br />
+            
+            <input type="hidden" [(ngModel)]="model.TargetDate" class="form-control" id="targetDate" name="targetDate" required #targetDate="ngModel" />
+            <p-calendar appendTo="body" [(ngModel)]="model.TargetDate" [touchUI]="true" [minDate]="getMinTargetDate()" [showIcon]="true" name="calendar" [defaultDate]="getMinTargetDate()"></p-calendar>
+        </div>
+
+        <div [hidden]="targetDate.valid || targetDate.untouched" class="alert alert-danger">
+            Target Date is required
+        </div>
+    
+        <div class="center">
+            <button type="submit" class="btn btn-success" [disabled]="!preferencesForm.form.valid" >Let's Go</button>
+        </div>
+    </form>
+</div>

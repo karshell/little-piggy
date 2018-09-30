@@ -1,0 +1,6 @@
+<p-dialog [(visible)]="display" [modal]="true" [closable]="false" [responsive]="true" [width]="GetDialogWidth()" [height]="GetDialogHeight()">
+    <p-header class="header">
+        Enter Savings Target
+    </p-header>
+    <preferences (submitted)="display=false"></preferences>
+</p-dialog>
