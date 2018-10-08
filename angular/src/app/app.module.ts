@@ -8,11 +8,11 @@ import { FormsModule }   from '@angular/forms';
 import { CalendarModule } from 'primeng/calendar';
 
 import { AppComponent } from './app.component';
-import { SummaryComponent } from './components/summary.component';
-import { GraphComponent } from './components/graph.component';
+import { SummaryComponent } from './components/summary/summary.component';
+import { GraphComponent } from './components/graph/graph.component';
 import { AppContextService } from './services/app-context.service';
-import { SetupDialogComponent } from './components/setup-dialog.component';
-import { PreferencesComponent } from './components/preferences.component';
+import { SetupDialogComponent } from './components/setup-dialog/setup-dialog.component';
+import { PreferencesComponent } from './components/preferences/preferences.component';
 
 @NgModule({
   declarations: [

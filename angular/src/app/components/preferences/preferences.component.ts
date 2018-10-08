@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { AppContext, AppContextService } from '../services/app-context.service'
+import { AppContext, AppContextService } from '../../services/app-context.service'
 
 @Component({
   selector: 'preferences',

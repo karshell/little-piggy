@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { PreferencesComponent } from './preferences.component';
+import { PreferencesComponent } from '../preferences/preferences.component';
 
 @Component({
   selector: 'setup-dialog',
@@ -12,10 +12,10 @@ export class SetupDialogComponent {
     display: boolean = true;
     
     GetDialogWidth(){
-        return window.screen.width - 10;
+        return window.screen.width;
     }
 
     GetDialogHeight(){
-        return window.screen.height - 10;
+        return window.screen.height;
     }
 }

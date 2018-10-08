@@ -25,7 +25,7 @@
             <label for="targetDate">Target Date</label><br />
             
             <input type="hidden" [(ngModel)]="model.TargetDate" class="form-control" id="targetDate" name="targetDate" required #targetDate="ngModel" />
-            <p-calendar appendTo="body" [(ngModel)]="model.TargetDate" [touchUI]="true" [minDate]="getMinTargetDate()" [showIcon]="true" name="calendar" [defaultDate]="getMinTargetDate()"></p-calendar>
+            <p-calendar readonlyInput="true" appendTo="body" [(ngModel)]="model.TargetDate" [touchUI]="true" [minDate]="getMinTargetDate()" [showIcon]="true" name="calendar" [defaultDate]="getMinTargetDate()"></p-calendar>
         </div>
 
         <div [hidden]="targetDate.valid || targetDate.untouched" class="alert alert-danger">
