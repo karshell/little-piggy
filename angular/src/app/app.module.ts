@@ -6,6 +6,7 @@ import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { FormsModule }   from '@angular/forms';
 import { CalendarModule } from 'primeng/calendar';
+import { SlickModule } from 'ngx-slick';
 
 import { AppComponent } from './app.component';
 import { SummaryComponent } from './components/summary/summary.component';
@@ -29,7 +30,8 @@ import { PreferencesComponent } from './components/preferences/preferences.compo
     DialogModule,
     ButtonModule,
     FormsModule,
-    CalendarModule
+    CalendarModule,
+    SlickModule.forRoot()
   ],
   providers: [
     AppContextService

@@ -1,4 +1,13 @@
-<div>
-    <p-chart style="height: 400px;" type="line" [data]="data" [options]="options"></p-chart>
-</div>
+<ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+    <div ngxSlickItem class="slide">
+        <p-chart style="height: 400px;" type="line" [data]="data" [options]="options"></p-chart>
+    </div>
+    <div ngxSlickItem class="slide">
+        Graph 2
+    </div>
+    <div ngxSlickItem class="slide">
+        Graph 3
+    </div>
+</ngx-slick>
+
     

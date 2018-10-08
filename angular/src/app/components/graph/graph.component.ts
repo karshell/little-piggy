@@ -8,9 +8,16 @@ import { Component } from '@angular/core';
 
 export class GraphComponent {
   data: any;
+  slideConfig: any;
   options: any;
 
   constructor() {
+      this.slideConfig = {
+          slidesToShow: 1, 
+          slidesToScroll: 1,
+          dots: true
+        };
+
       this.data = {
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
           datasets: [
