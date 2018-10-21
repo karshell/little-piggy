@@ -12,8 +12,10 @@ import { AppComponent } from './app.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { GraphComponent } from './components/graph/graph.component';
 import { AppContextService } from './services/app-context.service';
+import { SavingsService } from './services/savings.service';
 import { SetupDialogComponent } from './components/setup-dialog/setup-dialog.component';
 import { PreferencesComponent } from './components/preferences/preferences.component';
+import { SavingsListComponent } from './components/savings-list/savings-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { PreferencesComponent } from './components/preferences/preferences.compo
     SummaryComponent,
     GraphComponent,
     SetupDialogComponent,
-    PreferencesComponent
+    PreferencesComponent,
+    SavingsListComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { PreferencesComponent } from './components/preferences/preferences.compo
     SlickModule.forRoot()
   ],
   providers: [
-    AppContextService
+    AppContextService,
+    SavingsService
   ],
   bootstrap: [AppComponent]
 })

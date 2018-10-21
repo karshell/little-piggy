@@ -1,0 +1,7 @@
+<div class="list-container">
+    <div *ngFor="let i of displayedItems">
+        <div class="col-xs-6">{{ i?.Name }}</div>
+        <div class="col-xs-4">{{ i?.Category }}</div>
+        <div class="col-xs-2 saving-number">${{ i?.Amount }}</div>
+    </div>
+</div>

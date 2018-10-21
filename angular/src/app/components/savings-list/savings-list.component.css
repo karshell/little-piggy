@@ -1,0 +1,12 @@
+.saving-number {
+    color: #009900
+}
+
+.search-list {
+    height: 100%;
+}
+
+.list-container {
+    overflow-y: scroll;
+    max-height: 300px;
+}
